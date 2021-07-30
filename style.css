@@ -1,10 +1,9 @@
+/* font */
 @font-face{
     font-family:"Raleway";
     src: url(font/Raleway-VariableFont_wght.ttf) format("ttf");
 }
 body{
-    font-family: "Raleway";
+    font-family: 'Raleway', sans-serif;
 }
-p{
-    color: brown;
-}
+
