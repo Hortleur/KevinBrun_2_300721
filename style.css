@@ -6,4 +6,21 @@
 body{
     font-family: 'Raleway', sans-serif;
 }
+/* font awsome */
+.fas{
+    color: #0065FC;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+.fa-info{
+    border: 2px solid gray;
+    border-radius: 50%;
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 
+    
+}
