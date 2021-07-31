@@ -21,6 +21,29 @@ body{
     padding-right: 6px;
     padding-top: 4px;
     padding-bottom: 4px;
+}
 
-    
+/*capsules*/
+div.capsule{
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+
+}
+img{
+    width: 200px;
+}
+div.container{
+    padding: 10px 20px;
+    margin-bottom: 100px;
+}
+
+/*hotels*/
+.hotel{
+    background-color: #DEEBFF;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 250px;
+    height: 260px;
+
 }
