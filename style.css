@@ -5,6 +5,10 @@
 }
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+main{
+    margin: 50px;
 }
 /* font awsome */
 .fas{
@@ -23,7 +27,17 @@ body{
     padding-bottom: 4px;
 }
 
-/*capsules*/
+/*links*/
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+/*header*/
+
+
+/*capsules
 div.capsule{
     width: 80%;
     background-color: white;
@@ -37,13 +51,23 @@ div.container{
     padding: 10px 20px;
     margin-bottom: 100px;
 }
-
-/*hotels*/
+*/
+/*hotels
 .hotel{
     background-color: #DEEBFF;
     border: 3px solid white;
     border-radius: 20px;
     width: 250px;
     height: 260px;
-
+}
+*/
+/*footer*/
+footer > .flex-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #DEEBFF;
+    padding: 20px;
 }

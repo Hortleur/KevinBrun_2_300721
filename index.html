@@ -8,15 +8,17 @@
     <title>Reservia</title>
 </head>
 <body>
+    <main>
 <!-- Header-->
     <header>
-        <div id="header" class="container">
-            <div id="logo" class="container"><img src="images/logo/Reservia.svg" alt="logo reservia">
+        <div id="header" class="flex-container">
+            <div id="logo" class="container">
+                <img src="images/logo/Reservia.svg" alt="logo reservia">
             </div>
             <nav>
                 <a href="#hebergement">Hébergements</a>
                 <a href="#activite">Activités</a>
-                <a href="">S'inscrire</a>
+                <a id="inscription" href="">S'inscrire</a>
             </nav>
         </div>
     </header> <br>
@@ -25,8 +27,8 @@
     <div>
        <p>Trouvez votre hébergement pour des vacances de rêve </p> <br>
         En plein centre ville ou en pleine nature <br>
-        <i class="fas fa-map-marker-alt"></i> <input type="search" name="" id="">
-        <input type="submit" value="Rechercher">
+        <i class="fas fa-map-marker-alt"></i> <input type="search" name="rechercher" id="search">
+        <input type="submit" value="submit">
     </div><br>
     
 <!-- Filtres-->    
@@ -55,16 +57,6 @@
 
         <div class="hotel">
             <h3>Hébergement à Marseille</h3>
-
-
-                <div class="capsule">
-                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                    <div class="container">
-                        <p><bold>Auberge la Cannebière</bold></p>
-                        <p>A partir de <bold>25€</bold></p>
-                    </div>
-                </div>
-
         </div>
     </div>
 
@@ -72,9 +64,11 @@
     <div>
         <h3>Activités à Marseille</h3>
     </div>
+
+    </main>
 <!--Footer-->    
     <footer>
-        <div>
+        <div class="flex-container">
             <div>
                 <h4>A propos</h4>
                 <a href="">Fonctionnement du site</a> <br>
