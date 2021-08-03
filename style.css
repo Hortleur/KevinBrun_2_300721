@@ -3,11 +3,12 @@
     --blue: #0065FC;
 }
 
-/* font */
+/* font 
 @font-face{
     font-family:"Raleway";
     src: url(font/Raleway-VariableFont_wght.ttf) format("ttf");
 }
+*/
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -44,8 +45,8 @@ a:hover{
     color: var(--blue);
 }
 a > img{
-    width: 100%;
-    border-radius: 10%;
+    width: 200px;
+    border-radius: 15%;
 }
 /*header*/
 
@@ -81,6 +82,7 @@ a > img{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 8%;
 
 }
 
@@ -88,7 +90,7 @@ a > img{
 .capsule{
     padding: 2px;
     border: 2px solid white;
-    border-radius: 10%;
+    border-radius: 15%;
     background-color: white;
     width: 200px;
     height: 250px;
@@ -104,3 +106,5 @@ footer > .flex-container{
     background-color: #DEEBFF;
     padding: 20px;
 }
+
+/*media query */
