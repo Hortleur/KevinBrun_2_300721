@@ -1,3 +1,8 @@
+/*var*/
+:root{
+    --blue: #0065FC;
+}
+
 /* font */
 @font-face{
     font-family:"Raleway";
@@ -12,7 +17,7 @@ main{
 }
 /* font awsome */
 .fas{
-    color: #0065FC;
+    color: var(--blue);
     border: 6px solid transparent;
     border-radius: 50%;
     background-color: #DEEBFF;
@@ -36,7 +41,7 @@ a{
     color: black;  
 }
 a:hover{
-    color: #0065FC;
+    color: var(--blue);
 }
 a > img{
     width: 100%;
