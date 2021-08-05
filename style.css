@@ -37,11 +37,19 @@ a{
 a:hover{
     color: var(--blue);
 }
-a > img{
+#hotel a > img{
     width: 200px;
-    height: 180px;
+    height: 150px;
     border-radius: 12px;
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#populaire a > img{
+    width: 200px;
+    height: 150px;
+    border-radius: 12px;
+    border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
@@ -56,6 +64,10 @@ button:hover{
     background-color: var(--back);
 }
 /*header*/
+header{
+    display: flex;
+    flex-direction: row;
+}
 
 /*hebergement*/
 #hebergement{
@@ -64,6 +76,8 @@ button:hover{
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
+    width: max-content;
+    height: max-content;
 }
 
 /*populaire*/
@@ -73,12 +87,17 @@ button:hover{
     flex-direction: column;
     align-content: space-around;
     justify-content: space-evenly;
+    border-radius: 12px;
+    margin: 50px;
+    width: max-content;
+    height: 900px;
 }
 
 #pop{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
+    align-items: center;
     padding: 5px;
 }
 
@@ -91,14 +110,13 @@ button:hover{
     justify-content: space-between;
     justify-items: center;
     flex-wrap: wrap;
-    border-radius: 8%;
-    width: 900px;
-    height: 700px;
-
+    border-radius: 12px;
+    width: max-content;
+    height: 900px;
 }
 
 /*capsules*/
-.capsule{
+#hotel > .capsule{
     padding: 2px;
     border: 2px solid white;
     border-radius: 12px;
@@ -106,7 +124,18 @@ button:hover{
     width: 200px;
     height: 250px;
     margin: 10px;
-    
+    text-align: center;
+}
+
+#populaire > .capsule{
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
 }
 
 /*footer*/
