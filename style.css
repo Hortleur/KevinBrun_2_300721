@@ -4,12 +4,6 @@
     --back: #DEEBFF;
 }
 
-/* font 
-@font-face{
-    font-family:"Raleway";
-    src: url(font/Raleway-VariableFont_wght.ttf) format("ttf");
-}
-*/
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0px 50px;
@@ -20,9 +14,10 @@ body{
     border: 6px solid transparent;
     border-radius: 50%;
     background-color: var(--back);
+    border-collapse: collapse;
 }
 .fa-info{
-    border: 2px solid gray;
+    border: 2px solid var(--back);
     border-radius: 50%;
     background-color: white;
     padding-left: 6px;
@@ -45,7 +40,20 @@ a:hover{
 a > img{
     width: 200px;
     height: 180px;
-    border-radius: 15%;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/*button*/
+button{
+    background-color: white;
+    border: 1px solid var(--back);
+    border-collapse: collapse;
+    border-radius: 12px;
+}
+button:hover{
+    background-color: var(--back);
 }
 /*header*/
 
@@ -80,7 +88,7 @@ a > img{
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
     flex-wrap: wrap;
     border-radius: 8%;
@@ -93,10 +101,12 @@ a > img{
 .capsule{
     padding: 2px;
     border: 2px solid white;
-    border-radius: 15%;
+    border-radius: 12px;
     background-color: white;
     width: 200px;
     height: 250px;
+    margin: 10px;
+    
 }
 
 /*footer*/
