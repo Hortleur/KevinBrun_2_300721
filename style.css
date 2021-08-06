@@ -51,6 +51,7 @@ table {
 /*body*/
 body{
     min-width: 304px;
+    max-width: 1330px;
     font-family: Raleway, sans-serif;
 }
 /*page*/
@@ -185,33 +186,41 @@ span{
 .filtre button{
     background-color: white;
     border: 1px solid var(--back);
-    border-radius: 8px;
+    border-radius: 30px;
     padding: 0;
     margin: 10px;
 }
 .filtre .fas{
     color: var(--blue);
-    border: 2px solid transparent;
+    border: 15px solid transparent;
     background-color: var(--back);
-    border-radius: 8px;
+    border-radius: 30px;
 }
 .filtre button span{
     font-weight: bold;
     padding: 0 10px;
 }
+.eco{
+    flex: 50%;
+}
 .famille{
-    display: flex;
+    flex: 40%;
+}
+.romantique{
+    flex: 100%;
 }
 
 /*footer*/
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-color: var(--back);
     padding: 20px;
 }
+.aPropos, .nosHebergements, .assistance{
+    flex: 60%;
+} 
 .aPropos a, .nosHebergements a, .assistance a{
     display: flex;
     text-decoration: none;
