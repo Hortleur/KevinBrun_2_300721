@@ -11,21 +11,55 @@
 </head>
 <body>
     <div class="page">
+        <!-- Header-->
         <header>
             <nav>
                 <div class="logo"><img src="images/logo/Reservia.svg" alt="logo Reservia"></div>
-                <div class="hebergement"><a href="#">Hébergements</a></div>
-                <div class="activite"><a href="#">Activités</a></div>
+                <div class="hebergement"><a href="#herbergement">Hébergements</a></div>
+                <div class="activite"><a href="#activite">Activités</a></div>
                 <div class="inscription"><a href="#">S'inscrire</a></div>
             </nav>
         </header>
+        <!--Présentation et Recherche-->
         <section>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <span>En plein centre ville ou en pleine nature</span>
         </section>
+        <div class="recherche">
+            <label class="map"><i class="fas fa-map-marker-alt"></i></label>
+            <div class="searchBar"><input type="search" name="rechercher" class="barreDeRecherche"></div>
+            <button class="search"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Filtres-->    
+        <section class="filtre">
+            <h2>Filtres</h2>
+            <button><i class="fas fa-money-bill-wave"></i>Economique</button>
+            <button><i class="fas fa-child"></i>Familial</button>
+            <button><i class="fas fa-heart"></i>Romantique</button>
+            <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+        </section> 
+
     </div>
     <footer>
-
+        <div class="footer">
+            <div class="aPropos">
+                <h4>A propos</h4>
+                <a href="#">Fonctionnement du site</a> 
+                <a href="#">Condition générales de vente</a> 
+                <a href="#">Données et confidentialité</a> 
+            </div>
+            <div class="nosHebergements">
+                <h4>Nos Hébergements</h4>
+                <a href="#">Charte qualité</a> 
+                <a href="#">Soumettre votre hôtel</a>
+            </div>
+            <div class="assistance">
+                <h4>Assistance</h4>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/431707d5aa.js" crossorigin="anonymous"></script>
