@@ -76,6 +76,7 @@ nav{
 }
 .hebergement :hover, .activite :hover{
     border-bottom: 2px solid var(--blue);
+    color: var(--blue);
 }
 .activite{
     order: 4;
@@ -123,16 +124,11 @@ span{
 /*barre de recherche*/
 .recherche{
     display: flex;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
+    border-right: none;
     border-right-color: var(--blue);
     border-radius: 8px;
     margin-bottom: 10px;
-}
-.fa-search{
-    color: white;
-    background-color: var(--blue);
-    padding: 0;
-    margin: 0;
 }
 .map{
     display: flex;
@@ -163,14 +159,21 @@ span{
     flex: 20%;
     background-color: var(--blue);
     border: 2px solid transparent;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 8px;
     justify-content: center;
     align-items: center;
 }
-.search :hover{
-    cursor: pointer;
+.fa-search{
+    color: white;
+    padding: 0;
+    margin: 0;
 }
+.search:hover, .fa-search:hover{
+    cursor: pointer;
+    background-color: var(--back);
+    color: black;
+}
+
 
 
 /*filtres*/
