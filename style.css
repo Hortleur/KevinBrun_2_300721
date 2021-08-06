@@ -46,4 +46,58 @@ table {
 :root{
     --blue: #0065FC;
     --back: #DEEBFF;
+    --margin: 20px 8px;
+}
+/*body*/
+body{
+    min-width: 262px;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+}
+/*page*/
+.page{
+    margin: var(--margin);
+}
+/*header*/
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    order: 1;
+}
+.hebergement{
+    order: 3;
+}
+.activite{
+    order: 4;
+}
+.inscription{
+    order: 2;
+}
+
+.inscription a{
+    text-decoration: none;
+    color: var(--blue);
+    border: none;
+}
+.hebergement, .activite, nav a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+.hebergement, .activite{
+    border-bottom: 2px solid var(--back);
+    border-bottom-width: initial;
+}
+
+
+h1{
+    font-size: 1.2em;
+    font-weight: bold;
 }
