@@ -50,7 +50,7 @@ table {
 }
 /*body*/
 body{
-    min-width: 262px;
+    min-width: 304px;
     font-family: Raleway, sans-serif;
 }
 /*page*/
@@ -60,9 +60,8 @@ body{
 /*header*/
 nav{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -123,7 +122,7 @@ span{
 /*barre de recherche*/
 .recherche{
     display: flex;
-    border: 2px solid gray;
+    border: 2px solid transparent;
     border-right-color: var(--blue);
     border-radius: 8px;
     margin-bottom: 10px;
@@ -142,47 +141,72 @@ span{
     margin: 0;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    flex: 10%;
+    flex: 20%;
     justify-content: center;
     align-items: center;
 }
 .barreDeRecherche{
     height:30px;
-    padding: 0;
+    width: 100%;
+    padding: 0 5px;
     margin: 0;
     border: 1px solid transparent;
     border-left: none;
     border-right: none;
+    font-weight: bold;
 }
 .searchBar{
-    flex: 80%;
-}
-.searchButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 60%;
 }
 .search{
-    flex: 10%;
+    flex: 20%;
     background-color: var(--blue);
     border: 2px solid transparent;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    justify-content: center;
+    align-items: center;
 }
 .search :hover{
     cursor: pointer;
 }
 
+
 /*filtres*/
-.filtre{
+.filtres{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
+.filtre :hover{
+    cursor: pointer;
+    background-color: var(--blue);
+}
+.filtre button{
+    background-color: white;
+    border: 1px solid var(--back);
+    border-radius: 8px;
+    padding: 0;
+    margin: 10px;
+}
+.filtre .fas{
+    color: var(--blue);
+    border: 2px solid transparent;
+    background-color: var(--back);
+    border-radius: 8px;
+}
+.filtre button span{
+    font-weight: bold;
+    padding: 0 10px;
+}
+.famille{
+    display: flex;
+}
+
 /*footer*/
 .footer{
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--back);
