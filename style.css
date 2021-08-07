@@ -179,7 +179,6 @@ span{
 }
 
 
-
 /*filtres*/
 .filtres{
     display: flex;
@@ -248,20 +247,22 @@ span{
     flex-flow: row nowrap;
     justify-content: space-between;
     border: 10px solid white;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
+    border-radius: 30px;
     background-color: white;
     margin: 10px 0;
 }
 .cards:hover{
     cursor: pointer;
-    background-color: var(--blue);
-    border-color: var(--blue);
+    background-color:rgb(2, 46, 2);
+    border-color: rgb(2, 46, 2);
+    color: white;
 }
 .cards a img{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    width: 100%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 .photo{
     flex: 50%;
@@ -296,16 +297,30 @@ span{
     margin: var(--margin);
     border: 2px solid var(--back);
     border-radius: 30px;
+    padding: 0;
 
 }
+.marseilleCards:hover{
+    background-color: rgb(2, 46, 2);
+    cursor: pointer;
+    color: white;
+}
 .marseillePhoto a img{
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     width: 100%;
+    height: 150px;
+    object-fit: cover;
+
 }
 .marseilleDesc{
+    display: flex;
+    flex-direction: column ;
     margin: 5px 10px;
+}
+.marseilleDesc span{
+    margin-top: 10px;
 }
 .marseilleDesc span .fas{
     color: var(--blue);
@@ -320,6 +335,7 @@ span{
 .afficher button :hover{
     cursor: pointer;
     color: var(--blue);
+
 }
 
 /*footer*/
