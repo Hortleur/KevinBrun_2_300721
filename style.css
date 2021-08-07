@@ -245,7 +245,7 @@ span{
 }
 .cards{
     display: flex;
-    flex-grow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     border: 10px solid white;
     border-bottom-left-radius: 30px;
@@ -276,13 +276,43 @@ span{
 .desc span .fas{
     color: var(--blue);
 }
+.desc span .far{
+    color: var(--back);
+}
 .prix{
     display: block;
 }
 .euro{
     font-weight: bold;
 }
+/*card marseille*/
+.marseille{
+    margin: var(--margin);
+}
 
+.marseilleCards{
+    display: flex;
+    flex-flow: row wrap;
+    margin: var(--margin);
+    border: 2px solid var(--back);
+    border-radius: 30px;
+
+}
+.marseillePhoto a img{
+    border: 1px solid transparent;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+}
+.marseilleDesc{
+    margin: 5px 10px;
+}
+.marseilleDesc span .fas{
+    color: var(--blue);
+}
+.marseilleDesc span .far{
+    color: var(--back);
+}
 
 /*footer*/
 .footer{
