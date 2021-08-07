@@ -313,6 +313,14 @@ span{
 .marseilleDesc span .far{
     color: var(--back);
 }
+.afficher button{
+    background-color: unset;
+    border: none;
+}
+.afficher button :hover{
+    cursor: pointer;
+    color: var(--blue);
+}
 
 /*footer*/
 .footer{
