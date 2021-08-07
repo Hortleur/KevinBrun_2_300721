@@ -213,6 +213,21 @@ span{
     flex: 100%;
 }
 
+/*info*/
+.info{
+    display: block;
+    margin: var(--margin);
+}
+.fa-info{
+    color: var(--blue);
+    border: 2px solid var(--back);
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+/*hébergement*/
+
 /*footer*/
 .footer{
     display: flex;
