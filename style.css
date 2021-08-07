@@ -335,9 +335,41 @@ span{
 .afficher button :hover{
     cursor: pointer;
     color: var(--blue);
-
 }
 
+/*activité*/
+
+.activiteCards{
+    display: flex;
+    flex-flow: row wrap;
+    margin: var(--margin);
+    border: 2px solid var(--back);
+    border-radius: 30px;
+    padding: 0;
+
+}
+.activiteCards:hover{
+    background-color: rgb(2, 46, 2);
+    cursor: pointer;
+    color: white;
+}
+.activitePhoto a img{
+    border: 0px solid transparent;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+
+}
+.activiteDesc{
+    display: flex;
+    flex-direction: column ;
+    margin: 5px 10px;
+}
+.activiteDesc span{
+    margin-top: 10px;
+}
 /*footer*/
 .footer{
     display: flex;
