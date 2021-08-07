@@ -11,100 +11,140 @@
 </head>
 <body>
     <div class="page">
-        <!-- Header-->
-        <header>
-            <nav>
-                <div class="logo"><img src="images/logo/Reservia.svg" alt="logo Reservia"></div>
-                <div class="hebergement"><a href="#herbergement">Hébergements</a></div>
-                <div class="activite"><a href="#activite">Activités</a></div>
-                <div class="inscription"><a href="#">S'inscrire</a></div>
-            </nav>
-        </header>
-        <!--Présentation et Recherche-->
-        <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <span>En plein centre ville ou en pleine nature</span>
-        </section>
-        <div class="recherche">
-            <label class="map">
-                <i class="fas fa-map-marker-alt"></i>
-            </label>
-            <div class="searchBar">
-                <input type="search" name="rechercher" value="Marseille,France" class="barreDeRecherche">
+            <!-- Header-->
+            <header>
+                <nav>
+                    <div class="logo"><img src="images/logo/Reservia.svg" alt="logo Reservia"></div>
+                    <div class="hebergement"><a href="#herbergement">Hébergements</a></div>
+                    <div class="activite"><a href="#activite">Activités</a></div>
+                    <div class="inscription"><a href="#">S'inscrire</a></div>
+                </nav>
+            </header>
+            <!--Présentation et Recherche-->
+            <section>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <span>En plein centre ville ou en pleine nature</span>
+            </section>
+            <div class="recherche">
+                <label class="map">
+                    <i class="fas fa-map-marker-alt"></i>
+                </label>
+                <div class="searchBar">
+                    <input type="search" name="rechercher" value="Marseille,France" class="barreDeRecherche">
+                </div>
+                <button class="search" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
-            <button class="search" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
 
-        <!-- Filtres-->    
-        <section>
-            <h2>Filtres</h2>
-            <div  class="filtres">
-                <div class="filtre eco">
-                    <button>
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span>Economique</span>
-                    </button>
+            <!-- Filtres-->    
+            <section>
+                <h2>Filtres</h2>
+                <div  class="filtres">
+                    <div class="filtre eco">
+                        <button>
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Economique</span>
+                        </button>
+                    </div>
+                    <div class=" filtre famille">
+                        <button>
+                            <i class="fas fa-child"></i>
+                            <span>Familial</span>
+                        </button>
+                    </div>
+                    <div class="filtre romantique">
+                        <button>
+                            <i class="fas fa-heart"></i>
+                            <span>Romantique</span>
+                        </button>
+                    </div>
+                    <div class="filtre pets">
+                        <button type="submit">
+                            <i class="fas fa-dog"></i>
+                            <span>Animaux autorisés</span>
+                        </button>
+                    </div>
                 </div>
-                <div class=" filtre famille">
-                    <button>
-                        <i class="fas fa-child"></i>
-                        <span>Familial</span>
-                    </button>
+            </section>
+            
+    <!--Info-->        
+            <span class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette villes</span>
+    <!--Hébergements-->
+        <div>
+            <!--populaires-->
+            <div id="hebergement" class="hotel">
+                <div class="populaires">
+                    <div class="hotelPopulaires">
+                        <h2 class="titrePopulaire">Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                 </div>
-                <div class="filtre romantique">
-                    <button>
-                        <i class="fas fa-heart"></i>
-                        <span>Romantique</span>
-                    </button>
-                </div>
-                <div class="filtre pets">
-                    <button type="submit">
-                        <i class="fas fa-dog"></i>
-                        <span>Animaux autorisés</span>
-                    </button>
+                <div>    
+                    <div class="cards">
+                            <a href="#">
+                                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel du soleil du matin" loading="lazy">
+                            </a>
+                        <div class="desc">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <span class="prix">Nuit à partir de 128 <span class="euro">€</span></span>
+                            <span><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                            <span class="prix">Nuit a partir de 71<span class="euro">€</span></span>
+                            <span><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <span class="prix">Nuit à partir de 68 <span class="euro">€</span></span>
+                            <span><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-<!--Info-->        
-        <span class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette villes</span>
-<!--Hébergements-->
-        <div id="hebergement" class="hotel">
-            <div class="populaires">
-                <div class="hotelPopulaires">
-                    <h2 class="titrePopulaire">Les plus populaires</h2>
-                    <i class="fas fa-chart-line"></i>
-                </div>
-            </div>
-            <div>    
-                <div class="cards">
-                    <div class="photo">
+            <!--Marseille-->
+            <div class="marseille">
+                <h2>Hébergements à Marseille</h2>
+
+                <div class="marseilleCards">
+                    <div class="">
                         <a href="#">
-                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel du soleil du matin" loading="lazy">
+                            <img src="" alt="" loading="lazy">
                         </a>
                     </div>
-                    <div class="desc">
-                        <h3>Hôtel Le soleil du matin</h3>
-                        <span>Nuit à partir de 128 <span>€</span></span>
-                        <span><i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="photo">
-                        <a href="#">
-                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes" loading="lazy">
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <h3>Au coeur de l'eau Chambre d'hôtes</h3>
-                        <span>Nuit a partir de 71<span>€</span></span>
+                    <div class="">
+                        <h3></h3>
+                        <span class="prix">Nuit à partir de  <span class="euro">€</span></span>
                         <span><i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -113,25 +153,10 @@
                         </span>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="photo">
-                        <a href="#">
-                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc" loading="lazy">
-                        </a>
-                    </div>
-                    <div class="desc">
-                        <h3>Hôtel Tout bleu et Blanc</h3>
-                        <span>Nuit à partir de 68 <span class="euro">€</span></span>
-                        <span><i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </span>
-                    </div>
-                </div>
+            
+
             </div>
-        </div>       
+        </div>     
     </div>
     <footer>
         <div class="footer">

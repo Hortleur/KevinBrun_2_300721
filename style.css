@@ -232,10 +232,11 @@ span{
 
 /*hébergement*/
 .hotel{
-    margin: var(--margin);
+    background-color: var(--back);
+    padding: 20px;
+    margin: 0 !important;
 }
 .populaires{
-    background-color: var(--back);
     order: 1;
 }
 .hotelPopulaires{
@@ -244,13 +245,42 @@ span{
 }
 .cards{
     display: flex;
-    flex-grow: row nowrap;
+    flex-grow: row wrap;
+    justify-content: space-between;
+    border: 10px solid white;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+    margin: 10px 0;
+}
+.cards:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+.cards a img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 100%;
 }
 .photo{
     flex: 50%;
 }
+
 .desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
     flex: 50%;
+}
+.desc span .fas{
+    color: var(--blue);
+}
+.prix{
+    display: block;
+}
+.euro{
+    font-weight: bold;
 }
 
 
