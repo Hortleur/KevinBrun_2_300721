@@ -74,7 +74,7 @@ nav{
     order: 3;
     flex: 50%;
 }
-.hebergement :hover, .activite :hover{
+.hebergement:hover, .activite:hover{
     border-bottom: 2px solid var(--blue);
     color: var(--blue);
 }
