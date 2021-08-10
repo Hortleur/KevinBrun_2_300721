@@ -147,6 +147,10 @@ span{
     justify-content: center;
     align-items: center;
 }
+.map:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+}
 .barreDeRecherche{
     height:30px;
     width: 100%;
@@ -285,7 +289,7 @@ span{
     color: var(--back);
 }
 .note{
-    margin-top: 90px;
+    margin-top: auto;
 }
 .prix{
     display: block;
@@ -300,7 +304,7 @@ span{
 
 .marseilleCards{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin: var(--margin);
     border: 2px solid var(--back);
     border-radius: 30px;
@@ -338,6 +342,8 @@ span{
 .afficher button{
     background-color: unset;
     border: none;
+    font-weight: bold;
+    font-size: 0.8em;
 }
 .afficher button :hover{
     cursor: pointer;
@@ -348,12 +354,11 @@ span{
 
 .activiteCards{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin: var(--margin);
     border: 2px solid var(--back);
     border-radius: 30px;
     padding: 0;
-
 }
 .activiteCards:hover{
     background-color: rgb(2, 46, 2);
@@ -373,9 +378,6 @@ span{
     display: flex;
     flex-direction: column ;
     margin: 5px 10px;
-}
-.activiteDesc span{
-    margin-top: 10px;
 }
 /*footer*/
 .footer{
@@ -406,7 +408,7 @@ h4{
 
 /*media query*/
   /*tablette*/
-@media screen and (min-width: 680px){
+@media (min-width: 500px){
     /*nav*/
     nav{
         flex-flow: row nowrap;
@@ -423,6 +425,7 @@ h4{
         order: 3;
         flex: 10%;
         border: none;
+        margin: 0 10px;
     }
     .hebergement a, .activite a{
         text-decoration: none;
@@ -449,5 +452,87 @@ h4{
         font-size: 1em;
         font-weight: bold;
         color: white;
+    }
+    /*filtre*/
+    .eco, .famille, .romantique{
+        flex: none;
+    }
+    /*hebergement*/
+    .hebergements{
+        display: flex;
+        flex-direction: row;
+    }
+    .marseille{
+        display: flex;
+        order: 1;
+        flex: 70%;
+        flex-flow: row wrap;
+        background-color: var(--back);
+        border-radius: 12px;
+        padding: 5px;
+        margin: 0 5px;
+    }
+    .hotel{
+        flex: 30%;
+        order: 2;
+        border-radius: 12px;
+    }
+    .marseilleCards{
+        width: 200px;
+        background-color: white;
+    }
+    .titreHebergementMarseille{
+        flex: 100%;
+    }
+    .afficher{
+        flex: 100%;
+    }
+    /*activité*/
+    .activiteMarseille{
+        margin-top: 40px;
+    }
+    .titreActivite{
+        flex: 100%;
+    }
+    .cardsActivite{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .activiteCards{
+        width: 200px;
+    }
+    .colonne{
+        display: flex;
+    }
+    /*footer*/
+    .footer{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+@media (min-width:769px) {
+    /*recherche*/
+    .recherche{
+        width: 30%;
+    }
+    /*filtres*/
+    .filtres{
+        justify-content: left;
+    }
+    .eco, .famille, .romantique{
+        flex: none;
+
+    }
+    
+    /*activité*/
+
+}
+@media (min-width: 1330px){
+    body{
+        max-width: 1330px;
+        margin: auto;
+    }
+    .marseilleCards{
+        margin-right: 50px;
     }
 }
