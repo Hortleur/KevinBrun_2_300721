@@ -410,9 +410,13 @@ h4{
 /*media query*/
   /*tablette*/
 @media (min-width: 500px){
+    .page{
+        margin-top: 0;
+    }
     /*nav*/
     nav{
         flex-flow: row nowrap;
+        padding-top: 30px;
     }
     .logo{
         flex: 70%;
@@ -437,6 +441,7 @@ h4{
     }
     .hebergement a:hover, .activite a:hover{
         border-top: 2px solid var(--blue);
+        padding-top: 42px;
         color: var(--blue);
     }
     .hebergement:hover, .activite:hover{
