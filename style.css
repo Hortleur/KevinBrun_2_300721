@@ -360,11 +360,15 @@ span{
     border-radius: 30px;
     padding: 0;
 }
+.cardsActivite a{
+    text-decoration: none;
+    color: black;
+}
 .activiteCards:hover{
     background-color: var(--back);
     cursor: pointer;
 }
-.activitePhoto a img{
+.activitePhoto img{
     border: 0px solid transparent;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
@@ -431,11 +435,12 @@ h4{
         order: 4;
         flex: 10%;
     }
-    .hebergement :hover, .activite :hover{
+    .hebergement a:hover, .activite a:hover{
         border-top: 2px solid var(--blue);
-        border-bottom: none;
-        padding-top: 32px;
         color: var(--blue);
+    }
+    .hebergement:hover, .activite:hover{
+        border-bottom: none;
     }
     /*barre de recherche*/
     .recherche{
@@ -491,20 +496,32 @@ h4{
     .titreActivite{
         flex: 100%;
     }
-    .cardsActivite{
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .activiteCards{
-        width: 200px;
-    }
-    .colonne{
-        display: flex;
-    }
+
     /*footer*/
     .footer{
         display: flex;
         flex-flow: row nowrap;
+    }
+
+    .cardsActivite{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-between;
+    }
+    .vieuxPort{
+        grid-area: 1/1/4/2;
+    }
+    .vieuxPort .activiteCards .activitePhoto img, .calanques .activiteCards .activitePhoto img{
+        height: 370px;
+    }
+    .fort{
+        grid-area: 1/2/3/3;
+    }
+    .frioul{
+        grid-area: 2/2/3/2;
+    }
+    .calanques{
+        grid-area: 1/3/4/4;
     }
 }
 @media (min-width:769px) {
@@ -518,11 +535,7 @@ h4{
     }
     .eco, .famille, .romantique{
         flex: none;
-
     }
-    
-    /*activité*/
-
 }
 @media (min-width: 1330px){
     body{
@@ -535,26 +548,5 @@ h4{
     .hebergements{
         display: flex;
         justify-content: space-between;
-    }
-    .cardsActivite{
-        width: auto;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-    .activiteCards{
-        width: 72%;
-    }
-    .colonne1 .activiteCards .activitePhoto{
-        padding-bottom: 80%;
-    }
-    .colonne1 .activiteCards .activitePhoto img{
-        height: 210%;
-    }
-    .colonne1{
-        flex: 25%;
-    }
-    .colonne2{
-        flex: 25%;
     }
 }
