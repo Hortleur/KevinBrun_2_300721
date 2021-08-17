@@ -305,6 +305,10 @@ span{
     font-weight: bold;
 }
 /*card marseille*/
+.titreHebergementMarseille{
+    margin-left: 20px;
+}
+
 .marseille{
     margin: var(--margin);
 }
@@ -313,9 +317,10 @@ span{
     display: flex;
     flex-flow: column wrap;
     margin: var(--margin);
-    border: 2px solid var(--back);
+    border: 5px solid white;
     border-radius: 30px;
     padding: 0;
+    box-shadow: 0 0 10px 8px var(--gris);
 
 }
 .marseilleCards:hover{
@@ -351,6 +356,7 @@ span{
     border: none;
     font-weight: bold;
     font-size: 0.8em;
+    margin-left: 10px;
 }
 .afficher button:hover{
     cursor: pointer;
@@ -358,14 +364,18 @@ span{
 }
 
 /*activité*/
+.titreActivite{
+    margin-left: 20px;
+}
 
 .activiteCards{
     display: flex;
     flex-flow: column wrap;
     margin: var(--margin);
-    border: 2px solid var(--back);
+    border: 2px solid transparent;
     border-radius: 30px;
     padding: 0;
+    box-shadow: 0 0 10px 8px var(--gris);
 }
 .cardsActivite a{
     text-decoration: none;
@@ -386,6 +396,7 @@ span{
 }
 .activiteDesc{
     margin: 5px 10px;
+    padding: 10px 0;
 }
 /*footer*/
 .footer{
