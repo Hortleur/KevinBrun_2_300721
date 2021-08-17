@@ -51,13 +51,12 @@ table {
 }
 /*body*/
 body{
-    min-width: 304px;
-    max-width: 1330px;
     font-family: Raleway, sans-serif;
 }
 /*page*/
 .page{
     overflow: hidden;
+    max-width: 1330px;
 }
 /*header*/
 nav{
