@@ -51,13 +51,15 @@ table {
 }
 /*body*/
 body{
-    font-family: Raleway, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4em;
 }
 /*page*/
 .page{
     overflow: hidden;
     max-width: 1330px;
 }
+
 /*header*/
 nav{
     display: flex;
@@ -120,21 +122,22 @@ h1{
     margin-bottom: 10px;
 }
 h2{
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
 }
 h3{
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 span{
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 /*barre de recherche*/
 .recherche{
     display: flex;
-    border: 1px solid transparent;
+    height: 40px;
+    border: 1px solid var(--gris);
     border-right: none;
     border-radius: 8px;
     margin: auto 10px;
@@ -157,11 +160,11 @@ span{
     background-color: var(--blue);
 }
 .barreDeRecherche{
-    height:40px;
+    height:100%;
     width: 100%;
     padding: 0 5px;
     margin: 0;
-    border: 1px solid transparent;
+    border: 1px solid var(--gris);
     border-left: none;
     border-right: none;
     font-weight: bold;
@@ -192,6 +195,9 @@ span{
     color: black;
 }
 
+::placeholder{
+    opacity: 1;
+}
 
 /*filtres*/
 .filtres{
@@ -199,48 +205,49 @@ span{
     flex-flow: row wrap;
     justify-content: space-between;
 }
-.filtre :hover{
+.filtres button:hover{
     cursor: pointer;
     background-color: var(--blue);
 }
-.filtre button{
+.filtres > button{
     background-color: white;
     border: 1px solid var(--back);
     border-radius: 30px;
+    padding-right: 5px;
+    font-size: 1em;
     padding: 0;
-    margin: 10px;
+    margin-bottom: 10px;
 }
-.filtre .fas{
+.filtres button .fas{
     color: var(--blue);
-    border: 15px solid transparent;
+    border: 18px solid transparent;
     background-color: var(--back);
     border-radius: 30px;
 }
-.filtre button span{
+button span{
     font-weight: bold;
     padding: 0 10px;
-}
-.eco{
-    flex: 50%;
-}
-.famille{
-    flex: 40%;
-}
-.romantique{
-    flex: 100%;
+    font-family: "Raleway", sans-serif;
+    margin: auto;
 }
 
 /*info*/
 .info{
-    display: block;
     margin: var(--margin);
+    align-self: baseline;
+    font-size: 0.7em;
 }
 .fa-info{
     color: var(--blue);
     border: 2px solid var(--back);
     border-radius: 50%;
     background-color: white;
-    padding: 10px;
+    padding:  5px 10px;
+    align-self: baseline;
+    font-size: 0.8em;
+}
+.information{
+    display: flex;
 }
 
 /*hébergement*/
@@ -297,9 +304,11 @@ span{
 }
 .note{
     margin-top: auto;
+    margin-bottom: 15px;
 }
 .prix{
     display: block;
+    margin-top: 10px;
 }
 .euro{
     font-weight: bold;
@@ -551,6 +560,11 @@ h4{
     /*recherche*/
     .recherche{
         width: 30%;
+        height: 40px;
+    }
+    .search{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     /*filtres*/
     .filtres{
