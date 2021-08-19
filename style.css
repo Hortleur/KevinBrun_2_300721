@@ -209,7 +209,7 @@ span{
     cursor: pointer;
     background-color: var(--blue);
 }
-.filtres > button{
+.filtres button{
     background-color: white;
     border: 1px solid var(--back);
     border-radius: 30px;
@@ -223,12 +223,12 @@ span{
     border: 18px solid transparent;
     background-color: var(--back);
     border-radius: 30px;
+    font-size: 0.8em;
 }
 button span{
     font-weight: bold;
-    padding: 0 10px;
+    padding-right: 10px;
     font-family: "Raleway", sans-serif;
-    margin: auto;
 }
 
 /*info*/
@@ -316,6 +316,7 @@ button span{
 /*card marseille*/
 .titreHebergementMarseille{
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .marseille{
@@ -342,7 +343,7 @@ button span{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     width: 100%;
-    height: 150px;
+    height: 15vh;
     object-fit: cover;
 
 }
@@ -436,7 +437,7 @@ h4{
 
 /*media query*/
   /*tablette*/
-@media (min-width: 500px){
+@media (min-width: 760px){
     .page{
         margin-top: 0;
     }
@@ -572,6 +573,7 @@ h4{
     }
     .eco, .famille, .romantique{
         flex: none;
+        margin-right: 20px;
     }
 }
 @media (min-width: 1330px){
