@@ -82,9 +82,7 @@ header{
 .hebergement:hover, .activite:hover{
     border-bottom: 2px solid var(--blue);
 }
-.hebergement :hover, .activite :hover{
-    color: var(--blue);
-}
+
 .activite{
     order: 4;
     flex: 50%;
@@ -124,14 +122,19 @@ section{
     margin: var(--margin);
 }
 h1{
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 900;
     margin-bottom: 10px;
+    margin-left: 15px;
+}
+section span{
+    margin-left: 15px;
 }
 h2{
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
+    margin-left: 15px;
 }
 h3{
     font-size: 0.8em;
@@ -143,11 +146,10 @@ span{
 /*barre de recherche*/
 .recherche{
     display: flex;
-    height: 40px;
+    height: 50px;
     border: 1px solid var(--gris);
     border-radius: 20px;
-    margin: auto 10px;
-    width: 330px;
+    margin: auto 15px;
 }
 .map{
     display: flex;
@@ -210,6 +212,7 @@ span{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin: 10px;
 }
 .filtres button:hover{
     cursor: pointer;
@@ -236,9 +239,6 @@ button span{
     padding-right: 10px;
     font-family: "Raleway", sans-serif;
 }
-.famille{
-    margin-right: 20%;
-}
 .famille .fas{
     padding: 0 3px;
 }
@@ -263,12 +263,13 @@ button span{
 }
 .information{
     display: flex;
+    margin-left: 15px;
 }
 
 /*hébergement*/
 .hotel{
     background-color: var(--gris);
-    padding: 20px;
+    padding: 40px 15px;
 }
 .populaires{
     order: 1;
@@ -278,6 +279,9 @@ button span{
     justify-content: space-between;
     align-items: baseline;
 }
+.titrePopulaire{
+    margin-left: 0;
+}
 .cards{
     display: flex;
     flex-flow: row nowrap;
@@ -285,7 +289,7 @@ button span{
     border: 4px solid white;
     border-radius: 30px;
     background-color: white;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .cards:hover{
     cursor: pointer;
@@ -330,14 +334,8 @@ button span{
 }
 /*card marseille*/
 .titreHebergementMarseille{
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 15px;
 }
-
-.marseille{
-    margin: var(--margin);
-}
-
 .marseilleCards{
     display: flex;
     flex-flow: column wrap;
@@ -381,7 +379,9 @@ button span{
     border: none;
     font-weight: bold;
     font-size: 0.8em;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-family: "Raleway";
+    margin-bottom: 50px;
 }
 .afficher button:hover{
     cursor: pointer;
@@ -390,7 +390,7 @@ button span{
 
 /*activité*/
 .titreActivite{
-    margin-left: 20px;
+    margin-left: 3px;
 }
 
 .activiteCards{
