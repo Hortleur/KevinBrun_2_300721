@@ -56,7 +56,6 @@ body{
 }
 /*page*/
 .page{
-    overflow: hidden;
     max-width: 1330px;
 }
 
@@ -158,6 +157,7 @@ span .black{
     border: 1px solid var(--gris);
     border-radius: 20px;
     margin: auto 15px;
+    width: 330px
 }
 .map{
     display: flex;
@@ -214,7 +214,6 @@ span .black{
 ::placeholder{
     opacity: 1;
 }
-
 /*filtres*/
 .filtres{
     display: flex;
@@ -448,15 +447,11 @@ h4{
 
 /*media query*/
   /*tablette*/
-@media (min-width: 760px){
+@media (min-width: 600px){
     .page{
         margin-top: 0;
     }
     /*nav*/
-    nav{
-        flex-flow: row nowrap;
-        padding-top: 30px;
-    }
     .logo{
         flex: 70%;
     }
@@ -573,7 +568,7 @@ h4{
         grid-area: 1/3/4/4;
     }
 }
-@media (min-width:769px) {
+@media (min-width:768px) {
     /*recherche*/
     .recherche{
         width: 30%;
