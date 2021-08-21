@@ -452,18 +452,26 @@ h4{
         margin-top: 0;
     }
     /*nav*/
+    header{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+    }
     .logo{
         flex: 70%;
+        align-self: center;
     }
     .hebergement{
         order: 2;
         flex: 10%;
-        border: none;
+        border-bottom: none;
+        margin: 0 10px;
+
     }
     .activite{
         order: 3;
         flex: 10%;
-        border: none;
+        border-bottom: none;
         margin: 0 10px;
     }
     .hebergement a, .activite a{
@@ -475,16 +483,13 @@ h4{
     }
     .hebergement a:hover, .activite a:hover{
         border-top: 2px solid var(--blue);
-        padding-top: 42px;
+        padding-top: 36px;
         color: var(--blue);
     }
     .hebergement:hover, .activite:hover{
         border-bottom: none;
     }
     /*barre de recherche*/
-    .recherche{
-        width: 40%;
-    }
     .search i{
         display: none;
     }
@@ -497,6 +502,7 @@ h4{
     /*filtre*/
     .eco, .famille, .romantique{
         flex: none;
+        margin-right: 10px;
     }
     /*hebergement*/
     .hebergements{
@@ -510,20 +516,24 @@ h4{
         flex-flow: row wrap;
         background-color: var(--gris);
         border-radius: 12px;
-        padding: 5px;
-        margin: 0 5px;
+        padding: 10px;
+        margin: 0 15px;
+        justify-content: space-between;
     }
     .hotel{
         flex: 30%;
         order: 2;
         border-radius: 12px;
+        margin: 0 15px;
     }
     .marseilleCards{
-        width: 200px;
+        flex: 20%;
         background-color: white;
+        margin-right: 10px;
     }
     .titreHebergementMarseille{
         flex: 100%;
+        margin-top: 15px;
     }
     .afficher{
         flex: 100%;
