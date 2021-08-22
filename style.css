@@ -80,8 +80,6 @@ header{
 }
 .hebergement:hover, .activite:hover{
     border-bottom: 2px solid var(--blue);
-}
-.hebergement :hover, .activite :hover{
     color: var(--blue);
 }
 
@@ -99,14 +97,9 @@ header{
     padding-bottom: 20px;
     margin-top: 40px;
     margin-right: 20px;
+    color: var(--blue);
 }
 
-.inscription a{
-    text-decoration: none;
-    color: var(--blue);
-    border: none;
-    margin-right: 10px;
-}
 .hebergement, .activite, header a{
     text-decoration: none;
     color: black;
@@ -297,14 +290,17 @@ button span{
     border-radius: 30px;
     background-color: white;
     margin: 10px 8px;
+    text-decoration: none;
+}
+
+.lienCards{
+    text-decoration: none;
 }
 .cards:hover{
-    cursor: pointer;
     background-color:var(--back);
     border-color: var(--back);
-
 }
-.cards a img{
+.cards img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 150px;
@@ -321,6 +317,7 @@ button span{
     margin-left: 5px;
     flex: 50%;
     margin-top: 10px;
+    color: black;
 }
 .note{
     margin-top: auto;
@@ -338,6 +335,7 @@ button span{
 /*card marseille*/
 .titreHebergementMarseille{
     margin-left: 15px;
+    margin-top: 40px;
 }
 .marseilleCards{
     display: flex;
@@ -354,12 +352,12 @@ button span{
     cursor: pointer;
     border-color: var(--back);
 }
-.marseillePhoto a img{
+.marseillePhoto img{
     border: 0px solid transparent;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     width: 100%;
-    height: 15vh;
+    height: 120px;
     object-fit: cover;
 
 }
@@ -367,6 +365,7 @@ button span{
     display: flex;
     flex-direction: column ;
     margin: 5px 10px;
+    color: black;
 }
 .marseilleDesc span{
     margin-top: 10px;
@@ -410,7 +409,7 @@ button span{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     width: 100%;
-    height: 150px;
+    height: 115px;
     object-fit: cover;
 
 }
@@ -474,16 +473,13 @@ h4{
         border-bottom: none;
         margin: 0 10px;
     }
-    .hebergement a, .activite a{
-        text-decoration: none;
-    }
     .inscription{
         order: 4;
         flex: 10%;
     }
-    .hebergement a:hover, .activite a:hover{
+    .hebergement:hover, .activite:hover{
         border-top: 2px solid var(--blue);
-        padding-top: 36px;
+        padding-top: 38px;
         color: var(--blue);
     }
     .hebergement:hover, .activite:hover{
