@@ -170,8 +170,7 @@ span .black{
 }
 .barreDeRecherche{
     height:100%;
-    width: 100%;
-    padding: 0 5px;
+    padding: 0 10px;
     margin: 0;
     border: 1px solid var(--gris);
     border-left: none;
@@ -192,13 +191,14 @@ span .black{
 }
 .search span{
     display: none;
+    padding-left: 10px;
 }
 .fa-search{
     color: white;
     padding: 0;
     margin: 0;
 }
-.search:hover, .fa-search:hover{
+.search:hover{
     cursor: pointer;
     background-color: var(--back);
     color: black;
@@ -486,6 +486,10 @@ h4{
         border-bottom: none;
     }
     /*barre de recherche*/
+    .search{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
     .search i{
         display: none;
     }
@@ -494,6 +498,9 @@ h4{
         font-size: 1em;
         font-weight: bold;
         color: white;
+    }
+    .map{
+        padding: 0 20px;
     }
     /*filtre*/
     .eco, .famille, .romantique{
@@ -512,8 +519,7 @@ h4{
         flex-flow: row wrap;
         background-color: var(--gris);
         border-radius: 12px;
-        padding: 10px;
-        margin: 0 15px;
+        padding: 5px;
         justify-content: space-between;
     }
     .hotel{
@@ -523,9 +529,9 @@ h4{
         margin: 0 15px;
     }
     .marseilleCards{
-        flex: 20%;
         background-color: white;
-        margin-right: 10px;
+        width: 200px;
+        margin: 10px 0;
     }
     .titreHebergementMarseille{
         flex: 100%;
@@ -541,6 +547,15 @@ h4{
     .titreActivite{
         flex: 100%;
     }
+    .cardsActivite{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .activiteCards{
+        flex: 50%;
+        width: 300px;
+    }
 
     /*footer*/
     footer{
@@ -552,6 +567,16 @@ h4{
         max-width: 1330px;
         margin: 0 auto;
 }
+}
+@media (min-width:769px) {
+    /*filtres*/
+    .filtres{
+        justify-content: left;
+    }
+    .eco, .famille, .romantique{
+        flex: none;
+        margin-right: 20px;
+    }
 
     .cardsActivite{
         display: grid;
@@ -572,25 +597,6 @@ h4{
     }
     .calanques{
         grid-area: 1/3/4/4;
-    }
-}
-@media (min-width:768px) {
-    /*recherche*/
-    .recherche{
-        width: 30%;
-        height: 40px;
-    }
-    .search{
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    /*filtres*/
-    .filtres{
-        justify-content: left;
-    }
-    .eco, .famille, .romantique{
-        flex: none;
-        margin-right: 20px;
     }
 }
 @media (min-width: 1330px){
