@@ -78,6 +78,9 @@ header{
     flex: 50%;
     padding-bottom: 20px;
 }
+a.hebergement, a.activite{
+    font-size: 0.70em;
+}
 .hebergement:hover, .activite:hover{
     border-bottom: 2px solid var(--blue);
     color: var(--blue);
@@ -123,6 +126,7 @@ h1{
 }
 section span{
     margin-left: 15px;
+    font-size: 0.72em;
 }
 h2{
     font-size: 1em;
@@ -147,22 +151,23 @@ span .black{
 .recherche{
     display: flex;
     height: 50px;
-    border: 1px solid var(--gris);
+    border: 2px solid var(--gris);
     border-radius: 20px;
     margin: auto 15px;
     width: 330px
 }
 .map{
     display: flex;
-    border: 2px solid transparent;
+
     background-color: var(--gris);
     padding: 0;
     margin: 0;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    flex: 15%;
+    flex: 25%;
     justify-content: center;
     align-items: center;
+    font-size: 0.8em;
 }
 .map:hover{
     cursor: pointer;
@@ -170,28 +175,29 @@ span .black{
 }
 .barreDeRecherche{
     height:100%;
-    padding: 0 10px;
+    padding-left: 17px;
     margin: 0;
-    border: 1px solid var(--gris);
-    border-left: none;
-    border-right: none;
+    border: none;
     font-weight: bold;
+    font-size: 0.8em;
 }
 
 .searchBar{
     flex: 70%;
 }
 .search{
-    flex: 15%;
+    flex: 20%;
     background-color: var(--blue);
     border: 2px solid transparent;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+    font-size: 0.73em;
 }
 .search span{
     display: none;
     padding-left: 10px;
+    font-family: "Raleway", sans-serif;
 }
 .fa-search{
     color: white;
@@ -206,6 +212,7 @@ span .black{
 
 ::placeholder{
     opacity: 1;
+    font-family: "Raleway", sans-serif;
 }
 /*filtres*/
 .filtres{
@@ -220,7 +227,7 @@ span .black{
 }
 .filtres button{
     background-color: white;
-    border: 1px solid var(--gris);
+    border: 2px solid var(--gris);
     border-radius: 30px;
     padding-right: 5px;
     font-size: 1em;
@@ -259,7 +266,7 @@ button span{
     background-color: white;
     padding:  5px 10px;
     align-self: baseline;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 .information{
     display: flex;
@@ -579,7 +586,13 @@ h4{
     }
 
     .marseille .lienCards{
-        padding: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .marseilleCards{
+        width: 250px;
+        height:fit-content;
+        margin-right: auto !important;
     }
 
     .cardsActivite{
