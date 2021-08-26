@@ -60,21 +60,20 @@ body{
 }
 
 /*header*/
-header{
+
+
+.logo{
+    margin-top:20px;
+    margin-left: 20px;
+    float: left;
+}
+nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
-}
-
-.logo{
-    order: 1;
-    flex: 30%;
-    margin-top:20px;
-    margin-left: 20px;
 }
 .hebergement{
-    order: 3;
+    order: 2;
     flex: 50%;
     padding-bottom: 20px;
 }
@@ -87,12 +86,12 @@ a.hebergement, a.activite{
 }
 
 .activite{
-    order: 4;
+    order: 3;
     flex: 50%;
     padding-bottom: 20px;
 }
 .inscription{
-    order: 2;
+    order: 1;
     flex: 50%;
     text-align: end;
     font-weight: bold;
@@ -218,8 +217,6 @@ span .black{
 .filtres{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 10px;
 }
 .filtres button:hover{
     cursor: pointer;
@@ -227,31 +224,28 @@ span .black{
 }
 .filtres button{
     background-color: white;
-    border: 2px solid var(--gris);
-    border-radius: 30px;
-    padding-right: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.342);
+    border-radius: 35px;
     font-size: 1em;
-    padding: 0;
     margin-bottom: 10px;
 }
 .filtres button .fas{
     color: var(--blue);
-    border: 10px solid transparent;
+    border: 12px solid transparent;
     background-color: var(--back);
-    border-radius: 30px;
+    border-radius: 50%;
     font-size: 0.8em;
+    transform: translateX(-5px);
 }
 button span{
     font-weight: bold;
-    padding-right: 10px;
+    padding-right: 5px;
     font-family: "Raleway", sans-serif;
 }
 .famille .fas{
     padding: 0 3px;
 }
-.romantique{
-    margin-right: 50px;
-}
+
 
 /*info*/
 .info{
@@ -261,7 +255,7 @@ button span{
 }
 .fa-info{
     color: var(--blue);
-    border: 2px solid var(--gris);
+    border: 2px solid rgba(128, 128, 128, 0.342);
     border-radius: 50%;
     background-color: white;
     padding:  5px 10px;
