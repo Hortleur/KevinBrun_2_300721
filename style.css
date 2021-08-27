@@ -92,7 +92,6 @@ a.hebergement, a.activite{
 }
 .inscription{
     order: 1;
-    flex: 50%;
     text-align: end;
     font-weight: bold;
     font-size: 0.8em;
@@ -123,7 +122,7 @@ h1{
     margin-bottom: 10px;
     margin-left: 15px;
 }
-section span{
+.presentation span{
     margin-left: 15px;
     font-size: 0.72em;
 }
@@ -153,11 +152,10 @@ span .black{
     border: 2px solid var(--gris);
     border-radius: 20px;
     margin: auto 15px;
-    width: 330px
+    width: auto;
 }
 .map{
     display: flex;
-
     background-color: var(--gris);
     padding: 0;
     margin: 0;
@@ -217,17 +215,20 @@ span .black{
 .filtres{
     display: flex;
     flex-flow: row wrap;
+    margin-left: 10px;
 }
 .filtres button:hover{
     cursor: pointer;
-    background-color: var(--blue);
+    transform: rotateX(360deg);
+    transition: 1.5s;
 }
 .filtres button{
     background-color: white;
     border: 2px solid rgba(128, 128, 128, 0.342);
-    border-radius: 35px;
+    border-radius: 30px;
     font-size: 1em;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 0;
+    padding: 0 5px;
 }
 .filtres button .fas{
     color: var(--blue);
@@ -235,11 +236,11 @@ span .black{
     background-color: var(--back);
     border-radius: 50%;
     font-size: 0.8em;
-    transform: translateX(-5px);
+    transform: translateX(-8px);
 }
 button span{
     font-weight: bold;
-    padding-right: 5px;
+    padding-right: 10px;
     font-family: "Raleway", sans-serif;
 }
 .famille .fas{
@@ -264,7 +265,7 @@ button span{
 }
 .information{
     display: flex;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 /*hébergement*/
@@ -281,7 +282,7 @@ button span{
     align-items: baseline;
 }
 .titrePopulaire{
-    margin-left: 0;
+    margin-left: 5px;
 }
 .cards{
     display: flex;
@@ -335,7 +336,7 @@ button span{
 }
 /*card marseille*/
 .titreHebergementMarseille{
-    margin-left: 15px;
+    margin-left: 20px;
     margin-top: 40px;
 }
 .marseilleCards{
@@ -378,7 +379,7 @@ button span{
     font-size: 0.8em;
     margin-left: 15px;
     font-family: "Raleway";
-    margin: 30px 0 50px 15px;
+    margin: 30px 0 50px 18px;
 }
 .afficher button:hover{
     cursor: pointer;
@@ -387,7 +388,7 @@ button span{
 
 /*activité*/
 .titreActivite{
-    margin-left: 3px;
+    margin-left: 5px;
 }
 .activiteCards{
     display: flex;
@@ -434,9 +435,10 @@ button span{
     text-decoration: none;
     color: black;
     margin-bottom: 10px;
+    font-size: 0.7em;
 }
 h4{
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 10px;
