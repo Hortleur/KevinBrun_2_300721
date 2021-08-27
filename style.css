@@ -60,19 +60,43 @@ body{
 }
 
 /*header*/
-
-
-.logo{
-    margin-top:20px;
-    margin-left: 20px;
-    float: left;
-}
 nav{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    font-size: 0.85em;
+}
+
+header img{
+    order: 1;
+    margin: 20px 0 20px 14px;
+}
+.inscription{
+    order: 2;
+    flex: 1 1 50%;
+    text-align: right;
+    margin-top: 12px;
+    padding-right: 15px;
 }
 .hebergement{
+    order: 3;
+    flex: 1 1 50%;
+    text-align: center;
+}
+.activite{
+    order: 4;
+    flex: 1 1 50%;
+    text-align: center;
+}
+.hebergement a, .activite a{
+    text-decoration: none;
+    color: black;
+}
+.inscription a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/*.hebergement{
     order: 2;
     flex: 50%;
     padding-bottom: 20px;
@@ -111,7 +135,7 @@ a.hebergement, a.activite{
     text-align: center;
     font-size: .8em;
 }
-
+*/
 /*section*/
 section{
     margin: var(--margin);
@@ -203,12 +227,13 @@ span .black{
 }
 .search:hover{
     cursor: pointer;
-    background-color: var(--back);
     color: black;
+    background-color: var(--back);
 }
 
 ::placeholder{
     opacity: 1;
+    color: black;
     font-family: "Raleway", sans-serif;
 }
 /*filtres*/
@@ -280,6 +305,7 @@ button span{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding: 0 10px 0 10px;
 }
 .titrePopulaire{
     margin-left: 5px;
@@ -293,6 +319,7 @@ button span{
     background-color: white;
     margin: 10px 8px;
     text-decoration: none;
+    height: 150px;
 }
 
 .lienCards{
@@ -305,8 +332,8 @@ button span{
 .cards img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .photo{
@@ -449,129 +476,13 @@ h4{
 
 /*media query*/
   /*tablette*/
-@media (min-width: 600px){
-    .page{
-        margin-top: 0;
-    }
-    /*nav*/
-    header{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: baseline;
-    }
-    .logo{
-        flex: 70%;
-        align-self: center;
-    }
-    .hebergement{
-        order: 2;
-        flex: 10%;
-        border-bottom: none;
-        margin: 0 10px;
-
-    }
-    .activite{
-        order: 3;
-        flex: 10%;
-        border-bottom: none;
-        margin: 0 10px;
-    }
-    .inscription{
-        order: 4;
-        flex: 10%;
-    }
-    .hebergement:hover, .activite:hover{
-        border-top: 2px solid var(--blue);
-        padding-top: 38px;
-        color: var(--blue);
-    }
-    .hebergement:hover, .activite:hover{
-        border-bottom: none;
-    }
-    /*barre de recherche*/
-    .search{
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .search i{
-        display: none;
-    }
-    .search span{
-        display: initial;
-        font-size: 1em;
-        font-weight: bold;
-        color: white;
-    }
-    .map{
-        padding: 0 20px;
-    }
-    /*filtre*/
-    .eco, .famille, .romantique{
-        flex: none;
-        margin-right: 10px;
-    }
-    /*hebergement*/
-    .hebergements{
+@media (min-width: 767px){
+    nav{
         display: flex;
         flex-direction: row;
     }
-    .marseille{
-        display: flex;
-        order: 1;
-        flex: 70%;
-        flex-flow: row wrap;
-        background-color: var(--gris);
-        border-radius: 12px;
-        padding: 5px;
-        justify-content: space-between;
-    }
-    .hotel{
-        flex: 30%;
-        order: 2;
-        border-radius: 12px;
-        margin: 0 15px;
-    }
-    .marseilleCards{
-        background-color: white;
-        width: 200px;
-        margin: 10px 0;
-    }
-    .titreHebergementMarseille{
-        flex: 100%;
-        margin-top: 15px;
-    }
-    .afficher{
-        flex: 100%;
-    }
-    /*activité*/
-    .activiteMarseille{
-        margin-top: 40px;
-    }
-    .titreActivite{
-        flex: 100%;
-    }
-    .cardsActivite{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    .activiteCards{
-        flex: 50%;
-        width: 300px;
-    }
-
-    /*footer*/
-    footer{
-        background-color: var(--gris);
-    }
-    .footer{
-        display: flex;
-        flex-flow: row nowrap;
-        max-width: 1330px;
-        margin: 0 auto;
 }
-}
-@media (min-width:769px) {
+@media (min-width:992px) {
     /*filtres*/
     .filtres{
         justify-content: left;
