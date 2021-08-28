@@ -68,24 +68,26 @@ nav{
 
 header img{
     order: 1;
-    margin: 20px 0 20px 14px;
+    margin: 20px 0 20px 15px;
 }
 .inscription{
     order: 2;
     flex: 1 1 50%;
     text-align: right;
-    margin-top: 12px;
+    margin-top: 35px;
     padding-right: 15px;
 }
 .hebergement{
     order: 3;
-    flex: 1 1 50%;
-    text-align: center;
 }
 .activite{
     order: 4;
+}
+.hebergement, .activite{
     flex: 1 1 50%;
     text-align: center;
+    border-bottom: 2px solid var(--gris);
+    padding-bottom: 20px;
 }
 .hebergement a, .activite a{
     text-decoration: none;
@@ -94,57 +96,21 @@ header img{
 .inscription a{
     color: var(--blue);
     text-decoration: none;
-}
-
-/*.hebergement{
-    order: 2;
-    flex: 50%;
-    padding-bottom: 20px;
-}
-a.hebergement, a.activite{
-    font-size: 0.70em;
-}
-.hebergement:hover, .activite:hover{
-    border-bottom: 2px solid var(--blue);
-    color: var(--blue);
-}
-
-.activite{
-    order: 3;
-    flex: 50%;
-    padding-bottom: 20px;
-}
-.inscription{
-    order: 1;
-    text-align: end;
     font-weight: bold;
-    font-size: 0.8em;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    margin-right: 20px;
+}
+.hebergement :hover, .hebergement:hover, .activite:hover, .activite :hover{
     color: var(--blue);
+    border-bottom-color: var(--blue) ;
 }
-
-.hebergement, .activite, header a{
-    text-decoration: none;
-    color: black;
-    margin: 10px 0;
-}
-.hebergement, .activite{
-    border-bottom: 2px solid var(--gris);
-    text-align: center;
-    font-size: .8em;
-}
-*/
 /*section*/
 section{
     margin: var(--margin);
 }
 h1{
     font-size: 1em;
-    font-weight: 900;
+    font-weight: bold;
     margin-bottom: 10px;
-    margin-left: 15px;
+    margin-left: 12px;
 }
 .presentation span{
     margin-left: 15px;
@@ -154,7 +120,7 @@ h2{
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
-    margin-left: 15px;
+    margin-left: 12px;
 }
 h3{
     font-size: 0.8em;
@@ -181,8 +147,6 @@ span .black{
 .map{
     display: flex;
     background-color: var(--gris);
-    padding: 0;
-    margin: 0;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     flex: 25%;
@@ -201,6 +165,7 @@ span .black{
     border: none;
     font-weight: bold;
     font-size: 0.8em;
+    width: 100%;
 }
 
 .searchBar{
@@ -305,10 +270,7 @@ button span{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 0 10px 0 10px;
-}
-.titrePopulaire{
-    margin-left: 5px;
+    padding: 0 10px 0 5px;
 }
 .cards{
     display: flex;
@@ -415,7 +377,7 @@ button span{
 
 /*activité*/
 .titreActivite{
-    margin-left: 5px;
+    margin-left: 9px;
 }
 .activiteCards{
     display: flex;
@@ -440,7 +402,6 @@ button span{
     width: 100%;
     height: 115px;
     object-fit: cover;
-
 }
 .activiteDesc{
     margin: 5px 10px;
@@ -479,7 +440,7 @@ h4{
 @media (min-width: 767px){
     nav{
         display: flex;
-        flex-direction: row;
+        flex-direction: row nowrap;
     }
 }
 @media (min-width:992px) {
