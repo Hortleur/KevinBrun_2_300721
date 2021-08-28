@@ -68,7 +68,7 @@ nav{
 
 header img{
     order: 1;
-    margin: 20px 0 20px 15px;
+    margin: 20px 0 20px 18px;
 }
 .inscription{
     order: 2;
@@ -120,7 +120,6 @@ h2{
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
-    margin-left: 12px;
 }
 h3{
     font-size: 0.8em;
@@ -141,7 +140,7 @@ span .black{
     height: 50px;
     border: 2px solid var(--gris);
     border-radius: 20px;
-    margin: auto 15px;
+    margin: auto 18px;
     width: auto;
 }
 .map{
@@ -205,7 +204,10 @@ span .black{
 .filtres{
     display: flex;
     flex-flow: row wrap;
-    margin-left: 10px;
+    margin-left: 13px;
+}
+.titreFiltre{
+    margin-left: 12px;
 }
 .filtres button:hover{
     cursor: pointer;
@@ -265,6 +267,9 @@ button span{
 }
 .populaires{
     order: 1;
+}
+.titrePopulaires{
+    margin-left: -5px;
 }
 .hotelPopulaires{
     display: flex;
@@ -377,7 +382,7 @@ button span{
 
 /*activité*/
 .titreActivite{
-    margin-left: 9px;
+    margin-left: 20px;
 }
 .activiteCards{
     display: flex;
@@ -437,51 +442,77 @@ h4{
 
 /*media query*/
   /*tablette*/
-@media (min-width: 767px){
+@media (min-width: 768px){
     nav{
-        display: flex;
-        flex-direction: row nowrap;
+        flex-wrap: nowrap;
+        align-items: center;
     }
-}
-@media (min-width:992px) {
-    /*filtres*/
-    .filtres{
-        justify-content: left;
+    nav img{
+       margin-right: 40%; 
     }
-    .eco, .famille, .romantique{
+    .inscription{
+        order: 4;
         flex: none;
+        margin: 0;
+        text-align: right;
+        margin-right: 20px;
+        padding-top: 5px;
+    }
+    .hebergement, .activite{
+        border-bottom: none;
+        flex: none;
+        margin-top: 25px;
         margin-right: 20px;
     }
-
-    .marseille .lienCards{
-        margin-right: 0;
-        display: block;
-    }
-    .marseilleCards{
-        width: 250px;
-        height:fit-content;
-        margin-right: auto !important;
+    .hebergement :hover, .activite :hover{
+        border-top: 2px solid var(--blue);
+        padding-top: 32px;
     }
 
-    .cardsActivite{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-content: space-between;
+    .search i{
+        display: none;
     }
-    .vieuxPort{
-        grid-area: 1/1/4/2;
+    .search span{
+        display: initial;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
     }
-    .vieuxPort .activiteCards .activitePhoto img, .calanques .activiteCards .activitePhoto img{
-        height: 370px;
+    .recherche{
+        width: 400px;
     }
-    .fort{
-        grid-area: 1/2/3/3;
+    .search{
+        border-bottom-left-radius: none;
+        border-top-left-radius: none;
     }
-    .frioul{
-        grid-area: 2/2/3/2;
+    .marseille{
+        display: flex;
+        flex-flow:row wrap;
     }
-    .calanques{
-        grid-area: 1/3/4/4;
+    .cardMarseille{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+    .lienCards{
+        flex: 33%;
+    }
+
+        /*footer*/
+    footer{
+        background-color: var(--gris);
+    }
+    .footer{
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 1330px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:992px) {
+    .inscription, .hebergement, .activite{
+        flex: 1 1 10%;
     }
 }
 @media (min-width: 1330px){
