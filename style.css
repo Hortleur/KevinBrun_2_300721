@@ -445,8 +445,9 @@ h4{
     color: var(--blue);
 }
 
-/*media query*/
-  /*tablette*/
+        /*media query*/
+
+                    /*-----tablette------*/
 @media (min-width: 768px){
     nav{
         flex-wrap: nowrap;
@@ -534,6 +535,8 @@ h4{
     }
 }
 
+
+                    /*-----Laptop----*/
 @media (min-width:992px){
     .hebergement, .activite{
         margin-right: 0;
@@ -623,6 +626,7 @@ h4{
         grid-area: 2/4/4/5;
     }
 }
+                 /*-----Gros écrans------*/
 @media (min-width: 1330px){
     .page{
         margin: auto;
