@@ -42,7 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* variable */
+/* variable*/
 :root{
     --blue: #0065FC;
     --back: #DEEBFF;
@@ -99,7 +99,7 @@ header img{
     text-decoration: none;
     font-weight: bold;
 }
-.hebergement :hover, .hebergement:hover, .activite:hover, .activite :hover{
+.hebergement :hover, .hebergement a:link, .activite a:link, .activite :hover{
     color: var(--blue);
     border-bottom-color: var(--blue) ;
 }
@@ -580,9 +580,6 @@ h4{
                         'vieuxPort fort calanques dame'
                         'vieuxPort fort calanques longchamp'
                         'vieuxPort frioul calanques longchamp'
-    }
-    .vieuxPort, .fort, .frioul, .calanques, .dame, .longchamp{
-
     }
     .vieuxPort{
         grid-area: vieuxPort;
