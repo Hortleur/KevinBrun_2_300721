@@ -193,7 +193,7 @@ span .black{
 .search:hover{
     cursor: pointer;
     color: black;
-    background-color: var(--back);
+    background-color: rgb(4, 4, 139);
 }
 
 ::placeholder{
@@ -212,8 +212,7 @@ span .black{
 }
 .filtres button:hover{
     cursor: pointer;
-    transform: rotateX(360deg);
-    transition: 1.5s;
+    box-shadow:0px 0px 10px 2px var(--blue);
 }
 .filtres button{
     display: flex;
@@ -574,57 +573,48 @@ h4{
     .activiteMarseille{
         margin: 0 auto;
     }
-    .vieuxPort .activiteCards .activitePhoto, .calanques .activiteCards .activitePhoto{
-        height: 385px;
-    }
-    .vieuxPort, .calanques, .fort, .frioul, .dame, .longchamp{
-        align-self: center;
-    }
-    .fort .activiteCards .activitePhoto{
-        height: 180px;
-    }
-    .fort{
-        margin-top: 60px;
-    }
-    .frioul .activiteCards .activitePhoto{
-        height: 120px;
-    }
-    .longchamp .activiteCards .activitePhoto{
-        height: 180px;
-    }
-    .longchamp{
-        margin-bottom: 70px;
-    }
-    .dame .activiteCards .activitePhoto{
-        height: 120px;
-    }
-    .activitePhoto img{
-        height: 100%;
-    }
     .cardsActivite{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        row-gap: 200px;
+        grid-template-areas: 
+                        'vieuxPort fort calanques dame'
+                        'vieuxPort fort calanques longchamp'
+                        'vieuxPort frioul calanques longchamp'
+    }
+    .vieuxPort, .fort, .frioul, .calanques, .dame, .longchamp{
+
     }
     .vieuxPort{
-        grid-area: 1/1/4/2;
+        grid-area: vieuxPort;
     }
     .fort{
-        grid-area: 1/2/3/3;
+        grid-area: fort;
     }
     .frioul{
-        grid-area: 2/2/4/3;
+        grid-area: frioul;
     }
     .calanques{
-        grid-area: 1/3/4/3;
+        grid-area: calanques;
     }
     .dame{
-        grid-area: 1/4/3/5;
+        grid-area: dame;
     }
     .longchamp{
-        grid-area: 2/4/4/5;
+        grid-area: longchamp;
     }
+    .activitePhoto > img{
+        height: 100%;
+    }
+    .vieuxPort .activiteCards .activitePhoto, .calanques .activiteCards .activitePhoto{
+        height: 385px;
+    }
+    .fort .activiteCards .activitePhoto, .longchamp .activiteCards .activitePhoto{
+        height: 180px;
+    }
+    .frioul .activiteCards .activitePhoto, .dame .activiteCards .activitePhoto{
+        height: 120px;
+    }
+
 }
                  /*-----Gros écrans------*/
 @media (min-width: 1330px){
