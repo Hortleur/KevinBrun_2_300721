@@ -141,7 +141,7 @@ span .black{
     height: 50px;
     border: 2px solid var(--gris);
     border-radius: 20px;
-    margin: auto 18px;
+    margin: 0 18px 30px 18px;
     width: auto;
 }
 .map{
@@ -388,6 +388,9 @@ button span{
 .titreActivite{
     margin-left: 20px;
 }
+.activiteMarseille{
+    margin-bottom: 40px;
+}
 .activiteCards{
     display: flex;
     flex-flow: column wrap;
@@ -513,6 +516,7 @@ h4{
 
     .activiteMarseille{
         flex-flow: row wrap;
+        margin-bottom: 20px;
     }
     .cardsActivite{
         display: flex;
@@ -548,6 +552,9 @@ h4{
         display: flex;
         align-items: baseline;
     }
+    .information{
+        margin-bottom: 20px;
+    }
     .hebergements{
         display: flex;
         flex-flow: row nowrap;
@@ -571,7 +578,7 @@ h4{
         padding: 0 20px;
     }
     .activiteMarseille{
-        margin: 0 auto;
+        margin: 20px auto;
     }
     .cardsActivite{
         display: grid;
