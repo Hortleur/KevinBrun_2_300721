@@ -50,6 +50,9 @@ table {
     --gris: rgba(242,242,242,255);
     --shadow: #e4e4e4;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*body*/
 body{
     font-family: "Raleway", sans-serif;
