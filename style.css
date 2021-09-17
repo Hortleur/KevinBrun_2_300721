@@ -300,7 +300,6 @@ button span{
 }
 .cards:hover{
     background-color:var(--back);
-    border-color: var(--back);
 }
 .cards img{
     border-top-left-radius: 20px;
@@ -353,7 +352,6 @@ button span{
 .marseilleCards:hover{
     background-color: var(--back);
     cursor: pointer;
-    border-color: var(--back);
 }
 .marseillePhoto img{
     border: 0px solid transparent;
